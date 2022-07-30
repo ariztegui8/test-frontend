@@ -26,7 +26,9 @@ const Header = () => {
 
             <div className='buy'>
                 <img src={buy} alt="" />
-                <p>1</p>
+                <div className='numero'>
+                    <p>1</p>
+                </div>
             </div>
         </div>
 

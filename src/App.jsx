@@ -1,10 +1,12 @@
 import Banner from "./components/Banner";
 import Header from "./components/Header";
+import SliderProducts from "./components/SliderProducts";
 import { ProductsProvider } from "./context/ProductsProvider";
+
 
 function App() {
 
-
+  
 
 
   return (
@@ -13,6 +15,8 @@ function App() {
         <Header />
 
         <Banner />
+
+        <SliderProducts />
       </div>
     </ProductsProvider>
   );

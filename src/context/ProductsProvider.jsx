@@ -1,9 +1,11 @@
 import axios from "axios"
-import { createContext, useEffect } from "react"
+import { createContext, useEffect, useState } from "react"
 
 const ProductsContext = createContext()
 
 const ProductsProvider = ({children}) => {
+
+    const [productos, setProductos] = useState([]);
 
     useEffect(()=>{
 
@@ -11,7 +13,7 @@ const ProductsProvider = ({children}) => {
             try {
                 const url = 'https://corebiz-test.herokuapp.com/api/v1/products';
                 const {data} = await axios(url)
-                console.log(data);
+                setProductos(data);
             } catch (error) {
                 console.log(error);
             }
@@ -24,7 +26,7 @@ const ProductsProvider = ({children}) => {
     return(
         <ProductsContext.Provider
             value={{
-
+                productos,
             }}
         >
             {children}
