@@ -1,13 +1,71 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.container-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 15px 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container-input{
+    display: flex;
+    align-items: end;
+}
+
+.container-input input{
+    color: #7A7A7A;
+    font-size: 13px;
+    width: 500px;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+    border: none;
+    border-bottom: solid 2px #7A7A7A;
+}
+
+.container-cuenta{
+    display: flex;
+    gap: 50px;
+}
+
+.cuenta{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.cuenta p{
+    color: #7A7A7A;
+    font-size: 13px;
+    margin: 0;
+}
+
+.buy{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.buy p{
+    margin: 0;
+}
+
+/* ---- Carrousel ---- */
+.carousel-indicators [data-bs-target]{
+    background-clip: unset !important;
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50% !important;
+    border: none !important;
+    background-color: #BDBDBD !important;
+    opacity: 1 !important;
+}
+
+.carousel-indicators .active{
+    background-color: #F8475F !important;
+}
+
+.carousel-control-next-icon{
+    display: none !important;
+}
+
+.carousel-control-prev-icon{
+    display: none !important;
 }
