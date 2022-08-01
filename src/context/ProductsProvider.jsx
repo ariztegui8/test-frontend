@@ -6,6 +6,7 @@ const ProductsContext = createContext()
 const ProductsProvider = ({children}) => {
 
     const [productos, setProductos] = useState([]);
+    const [sumarCarrito, setSumarCarrito] = useState(0)
 
     useEffect(()=>{
 
@@ -22,11 +23,17 @@ const ProductsProvider = ({children}) => {
 
     }, [])
 
+    const contador = () =>{
+        setSumarCarrito(sumarCarrito + 1 )
+    }
+
 
     return(
         <ProductsContext.Provider
             value={{
                 productos,
+                sumarCarrito,
+                contador,
             }}
         >
             {children}

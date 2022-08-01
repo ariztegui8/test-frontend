@@ -6,6 +6,7 @@ import SliderProducts from "./components/SliderProducts";
 import { ProductsProvider } from "./context/ProductsProvider";
 
 
+
 function App() {
 
   
@@ -23,6 +24,7 @@ function App() {
         <Formulario />
 
         <Footer />
+        
       </div>
     </ProductsProvider>
   );

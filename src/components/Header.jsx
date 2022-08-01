@@ -1,9 +1,16 @@
 import logo1 from '../assets/logo1.jpg'
 import search from '../assets/search.svg'
-import user from '../assets/user.svg'
+import user2 from '../assets/user2.svg'
 import buy from '../assets/buy.svg'
+import useProducts from '../hooks/useProducts'
+
+
 
 const Header = () => {
+
+    const {sumarCarrito} = useProducts();
+    console.log(sumarCarrito);
+
   return (
     <div className='container-header'>
         <div>
@@ -20,14 +27,14 @@ const Header = () => {
 
         <div className='container-cuenta'>
             <div className='cuenta'>
-                <img src={user} alt="" />
+                <img src={user2} alt="" />
                 <p>Mi Cuenta</p>
             </div>
 
             <div className='buy'>
                 <img src={buy} alt="" />
                 <div className='numero'>
-                    <p>1</p>
+                    <p>{sumarCarrito}</p>
                 </div>
             </div>
         </div>

@@ -25,6 +25,7 @@ font-family: 'Lato', sans-serif; */
     outline: none;
 }
 
+
 .container-cuenta{
     display: flex;
     gap: 50px;
@@ -114,6 +115,7 @@ font-family: 'Lato', sans-serif; */
 .contenido-card .lista-precio{
     font-size: 12px;
     color: #7A7A7A;
+    font-family: 'Nunito', sans-serif;
     margin-bottom: 0;
 }
 
@@ -127,6 +129,7 @@ font-family: 'Lato', sans-serif; */
 .contenido-card .cuota{
     font-size: 11px;
     color: #7A7A7A;
+    font-family: 'Nunito', sans-serif;
     margin-bottom: 5px;
 }
 
@@ -136,6 +139,7 @@ font-family: 'Lato', sans-serif; */
     color: #fff;
     font-size: 12px;
     font-weight: 700;
+    font-family: 'Nunito', sans-serif;
     padding: 5px 30px;
     border-radius: 5px;
 }
@@ -183,12 +187,126 @@ font-family: 'Lato', sans-serif; */
 }
 
 .container-footer{
-    background-color: #F8475F;
+    background-color: #000;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 0;
+}
+
+.container-footer .textos-footer{
+    color: #fff;
+}
+
+.container-footer .textos-footer p{
+    margin-bottom: 5px;
+    font-size: 13px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.container-footer .textos-footer .title-footer{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+}
+
+.container-footer .textos-footer .title-footer::after{
+    content: '';
+    border-bottom: 4px solid #fff;
+    display: block;
+    width: 50px;
+    margin: 15px 0
+}
+
+.container-footer .btn-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.container-footer .btn-footer button{
+    text-transform: uppercase;
+    background-color: #fff;
+    color: #000;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+    padding: 0 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 38px;
+    gap: 20px;
+}
+
+.container-footer .icons-footer{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.container-footer .icons-footer div{
+    color: #fff;
+    font-size: 11px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.div-corebiz {
+    margin-bottom: 10px;
+}
+
+.container-footer .icons-footer .div-corebiz .corebiz{
+    margin-bottom: 5px;
+}
+
+
+.container-footer .icons-footer .div-vtex .vtex{
+    margin: 0;
 }
 
 
 
-/* ---- Carrousel ---- */
+/*---- Slider Owl ----*/
+.item {
+    display: flex;
+    justify-content: center;
+}
+
+/* .owl-theme .owl-nav{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 190px;
+} */
+
+.owl-carousel .owl-nav button.owl-prev ,.owl-carousel .owl-nav button.owl-next{
+   position: absolute !important;
+   top: 50% !important;
+   transform: translateY(-50%) !important;
+   color: #000 !important;
+   font-size: 60px !important;
+   background: none !important;
+}
+
+.owl-nav button{
+    border: none !important;
+    outline: none !important;
+}
+
+.owl-prev{
+    left: 0 !important;
+}
+
+.owl-next{
+    right: 0 !important;
+}
+
+
+
+
+
+/* ---- Carrousel Bootstrap---- */
 .carousel-indicators [data-bs-target]{
     background-clip: unset !important;
     width: 10px !important;
@@ -210,3 +328,21 @@ font-family: 'Lato', sans-serif; */
 .carousel-control-prev-icon{
     display: none !important;
 }
+
+.carousel-caption{
+    right: unset !important;
+    left: 10% !important;
+    bottom: 6rem !important;
+    text-align: left !important;
+    max-width: 500px !important;
+}
+
+.carousel-caption h3{
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 15px;
+}
+
+.carousel-caption h1{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+ }

@@ -1,11 +1,13 @@
 import logoFooter from '../assets/logo-footer.svg'
-import user from '../assets/user.svg'
+import contactanos from '../assets/contactanos.svg'
+import consultor from '../assets/consultor.svg'
+import vtex from '../assets/vtex.svg'
 
 const Footer = () => {
   return (
     <div className='container-footer'>
         <div className='textos-footer'>
-          <p className='title-footer'>Ubicación</p>
+          <h3 className='title-footer'>Ubicación</h3>
           <p>Avenida Andrômeda, 2000. Bloco 6 e 8</p>
           <p>Alphavile SP</p>
           <p>brasil@corebiz.ag</p>
@@ -13,19 +15,23 @@ const Footer = () => {
         </div>
 
         <div className='btn-footer'>
-            <button><img src={user} alt="" />CONTÁCTANOS</button>
-            <button>HABLA CON UN CONSULTOR</button>
+            <button>
+              <img src={contactanos} alt="" />CONTÁCTANOS
+            </button>
+            <button>
+              <img src={consultor} alt="" />HABLA CON UN CONSULTOR
+            </button>
         </div>
 
         <div className='icons-footer'>
-            <div>
-              <p>Desarrollado por</p>
+            <div className='div-corebiz'>
+              <p className='corebiz'>Desarrollado por</p>
               <img src={logoFooter} alt="" />
             </div>
 
-            <div>
-              <p>Desarrollado por</p>
-              <img src="" alt="" />
+            <div className='div-vtex'>
+              <p className='vtex'>Desarrollado por</p>
+              <img src={vtex} alt="" />
             </div>
         </div>
     </div>

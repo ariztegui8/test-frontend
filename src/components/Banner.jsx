@@ -13,6 +13,10 @@ const Banner = () => {
           src={banner1}
           alt="First slide"
         />
+        <Carousel.Caption>
+          <h3>¡Hola! ¿Qué es lo que buscas?</h3>
+          <h1>Crear o migrar tu comercio electrónico?</h1>
+        </Carousel.Caption>
       </Carousel.Item>
 
       <Carousel.Item>
@@ -21,6 +25,10 @@ const Banner = () => {
           src={banner2}
           alt="Second slide"
         />
+        <Carousel.Caption>
+          <h3>¡Hola! ¿Qué es lo que buscas?</h3>
+          <h1>Crear o migrar tu comercio electrónico?</h1>
+        </Carousel.Caption>
       </Carousel.Item>
 
       <Carousel.Item>
@@ -29,6 +37,10 @@ const Banner = () => {
           src={banner3}
           alt="Third slide"
         />
+        <Carousel.Caption>
+          <h3>¡Hola! ¿Qué es lo que buscas?</h3>
+          <h1>Crear o migrar tu comercio electrónico?</h1>
+        </Carousel.Caption>
       </Carousel.Item>
 
       <Carousel.Item>
@@ -37,6 +49,10 @@ const Banner = () => {
           src={banner4}
           alt="Third slide"
         />
+        <Carousel.Caption>
+          <h3>¡Hola! ¿Qué es lo que buscas?</h3>
+          <h1>Crear o migrar tu comercio electrónico?</h1>
+        </Carousel.Caption>
       </Carousel.Item>
 
     </Carousel>
