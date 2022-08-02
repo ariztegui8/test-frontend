@@ -26,9 +26,12 @@ const Header = () => {
                     <ShoppingCartOutlinedIcon  fontSize='large'/>
                     <div>
                        
-                        <div className='numero'>
-                            <p>{sumarCarrito}</p>
-                        </div>
+                    {sumarCarrito == '0' ?
+                        <p></p>            :
+                    <div className='numero'>
+                        <p>{sumarCarrito}</p>
+                    </div> 
+                    } 
                        
                     </div>
                 </div>

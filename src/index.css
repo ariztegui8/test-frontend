@@ -104,6 +104,26 @@ font-family: 'Lato', sans-serif; */
     opacity: 1;
 }
 
+.caja .off{
+    background-color: #F8475F;
+    width: 81px;
+    height: 72px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 50%);
+    position: absolute;
+    right: 0;
+}
+
+.caja .off p{
+   font-size: 16px;
+   font-family: 'Nunito', sans-serif;
+   font-weight: 900;
+   color: #fff;
+   text-transform: uppercase;
+   position: relative;
+   left: 16px;
+   top: 10px;
+}
+
 .contenido-card .name{
     font-size: 12px;
     color: #7A7A7A;
@@ -202,6 +222,7 @@ font-family: 'Lato', sans-serif; */
     display: flex;
     justify-content: space-around;
     padding: 30px 100px;
+    gap: 10px;
 }
 
 .container-footer .textos-footer{
@@ -244,13 +265,12 @@ font-family: 'Lato', sans-serif; */
     font-family: 'Nunito', sans-serif;
     padding: 0 20px;
     border-radius: 5px;
-    display: flex;
-    align-items: center;
-    text-align: center;
     height: 38px;
-    gap: 20px;
     border: none;
     transition: 0.3s;
+    display: grid;
+    grid-template-columns: 40px auto;
+    align-items: center;
 }
 
 .container-footer .btn-footer button:hover{
@@ -372,6 +392,8 @@ font-family: 'Lato', sans-serif; */
     font-weight: 900;
  }
 
+
+
 /* -----Mobile---- */
 .container-header-mobile{
     display: none;
@@ -403,61 +425,6 @@ font-family: 'Lato', sans-serif; */
     align-items: end;
     position: relative;
     width: 40%;
-}
-
-.container-input input{
-    color: #e90e0e;
-    font-size: 13px;
-    margin-bottom: 5px;
-    padding-bottom: 10px;
-    border: none;
-    border-bottom: solid 2px #7A7A7A;
-    font-family: 'Nunito', sans-serif;
-    outline: none;
-    width: 100%;
-}
-
-
-.container-cuenta{
-    display: flex;
-    gap: 50px;
-}
-
-.cuenta{
-    display: flex;
-    gap: 10px;
-    align-items: center;
-}
-
-.cuenta p{
-    color: #7A7A7A;
-    font-size: 13px;
-    margin: 0;
-    font-family: 'Nunito', sans-serif;
-}
-
-.buy{
-    display: flex;
-    gap: 5px;
-    align-items: center;
-}
-
-.buy .numero{
-    background: #F8475F;
-    border-radius: 50%;
-    width: 17px;
-    height: 17px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.buy .numero p{
-    margin: 0;
-    color: #fff;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 600;
-    font-size: 12px;
 }
 
 
@@ -613,11 +580,30 @@ font-family: 'Lato', sans-serif; */
     .error p{
         width: 100% !important;
     }
+
+    .caja .off{
+        width: 62px;
+        height: 54px;
+    }
+    
+    .caja .off p{
+       font-size: 10px;
+       font-weight: 700;
+       left: 12px;
+       top: 10px;
+    }
 }
 
 @media (max-width: 576px){
     .carousel-caption{
         bottom: 15px !important;
+    }
+    
+}
+
+@media (max-width: 1400px){
+    .carousel-caption{
+        bottom: 30px !important;
     }
     
 }

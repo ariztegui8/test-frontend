@@ -7,7 +7,7 @@ const ProductsProvider = ({children}) => {
 
     const [productos, setProductos] = useState([]);
     const [sumarCarrito, setSumarCarrito] = useState(
-        Number(localStorage.getItem('carrito')) ?? 0
+        Number(localStorage.getItem('carrito')) 
     )
     const [mostrarBtn, setMostrarBtn] = useState(false)
     const [mostrarContador, setMostrarContador] = useState(false)
@@ -49,14 +49,15 @@ const ProductsProvider = ({children}) => {
     }, [sumarCarrito])
 
     useEffect(()=>{
-        localStorage.setItem('carrito', sumarCarrito ?? 0)
+        localStorage.setItem('carrito', sumarCarrito )
     }, [sumarCarrito])
+
     
-    const contador = () =>{
-        setSumarCarrito(sumarCarrito + 1 )
-        // setMostrarContador(true)
-        
+    const contador = () =>{ 
+      setSumarCarrito(sumarCarrito + 1 )
+      setMostrarContador(true)
     }
+
 
     const handleSubmit = async e =>{
         e.preventDefault()
@@ -67,7 +68,7 @@ const ProductsProvider = ({children}) => {
       }
       setTimeout(()=>{
         setError('')
-    },3000)
+      },3000)
     
         try {
           const config = {
@@ -90,7 +91,12 @@ const ProductsProvider = ({children}) => {
             setTimeout(()=>{
                 setMostrarMensaje('')
             },3000)
-        }
+          }
+          
+        setValidarForm({
+          name: '',
+          email: ''
+        })
 
         } catch (error) {
           console.log(error);
@@ -117,7 +123,7 @@ const ProductsProvider = ({children}) => {
                 handleChange,
                 message,
                 validarForm,
-                mostrarMensaje
+                mostrarMensaje,
             }}
         >
             {children}

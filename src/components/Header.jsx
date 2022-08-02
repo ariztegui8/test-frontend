@@ -35,13 +35,15 @@ const Header = () => {
             <div className='buy'>
                 <ShoppingCartOutlinedIcon  fontSize='large'/>
                 <div>
+                {sumarCarrito == '0' ?
+                    <p></p>   :
+                    <div className='numero'>
+                        <p>{sumarCarrito}</p>
+                    </div> 
+                } 
                     
                    
-                        <div className='numero'>
-                            <p>{sumarCarrito}</p>
-                        </div>
-                  
-                    
+                
                 </div>
             </div>
         </div>
