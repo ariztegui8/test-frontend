@@ -5,24 +5,26 @@ font-family: 'Lato', sans-serif; */
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: 15px 0;
+    padding: 15px 100px;
 }
 
 .container-input{
     display: flex;
     align-items: end;
+    position: relative;
+    width: 40%;
 }
 
 .container-input input{
     color: #7A7A7A;
     font-size: 13px;
-    width: 500px;
     margin-bottom: 5px;
     padding-bottom: 10px;
     border: none;
     border-bottom: solid 2px #7A7A7A;
     font-family: 'Nunito', sans-serif;
     outline: none;
+    width: 100%;
 }
 
 
@@ -46,15 +48,15 @@ font-family: 'Lato', sans-serif; */
 
 .buy{
     display: flex;
-    gap: 10px;
+    gap: 5px;
     align-items: center;
 }
 
 .buy .numero{
     background: #F8475F;
     border-radius: 50%;
-    width: 20px;
-    height: 20px;
+    width: 17px;
+    height: 17px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,11 +67,12 @@ font-family: 'Lato', sans-serif; */
     color: #fff;
     font-family: 'Nunito', sans-serif;
     font-weight: 600;
+    font-size: 12px;
 }
 
 .container-slider{
-    padding: 40px 0;
-    max-width: 1200px;
+    padding: 40px 100px;
+    max-width: 1400px;
     margin: auto;
 }
 
@@ -96,6 +99,9 @@ font-family: 'Lato', sans-serif; */
 
 .caja:hover{
     background-color: #E6E8EA;
+}
+.caja:hover .contenido-card button{
+    opacity: 1;
 }
 
 .contenido-card .name{
@@ -140,8 +146,10 @@ font-family: 'Lato', sans-serif; */
     font-size: 12px;
     font-weight: 700;
     font-family: 'Nunito', sans-serif;
-    padding: 5px 30px;
+    padding: 8px 30px;
     border-radius: 5px;
+    border: none;
+    opacity: 0;
 }
 
 .container-formulario{
@@ -168,6 +176,7 @@ font-family: 'Lato', sans-serif; */
     border: none;
     background-color: #fff;
     outline: none;
+    height: 48px;
 }
 
 .container-formulario .formulario{
@@ -184,13 +193,15 @@ font-family: 'Lato', sans-serif; */
     font-weight: bold;
     padding: 10px 30px;
     font-family: 'Lato', sans-serif;
+    border: none;
+    height: 48px;
 }
 
 .container-footer{
     background-color: #000;
     display: flex;
-    justify-content: space-evenly;
-    padding: 30px 0;
+    justify-content: space-around;
+    padding: 30px 100px;
 }
 
 .container-footer .textos-footer{
@@ -238,6 +249,12 @@ font-family: 'Lato', sans-serif; */
     text-align: center;
     height: 38px;
     gap: 20px;
+    border: none;
+    transition: 0.3s;
+}
+
+.container-footer .btn-footer button:hover{
+    background-color: #E6E8EA;
 }
 
 .container-footer .icons-footer{
@@ -265,6 +282,20 @@ font-family: 'Lato', sans-serif; */
     margin: 0;
 }
 
+.barrita{
+    background-color: #C0C0C0;
+    height: 10px;
+}
+
+.carrousel-mobile{
+    display: none;
+}
+
+.error p{
+    font-family: 'Lato', sans-serif !important;
+    width: 40% !important;
+}
+
 
 
 /*---- Slider Owl ----*/
@@ -272,13 +303,6 @@ font-family: 'Lato', sans-serif; */
     display: flex;
     justify-content: center;
 }
-
-/* .owl-theme .owl-nav{
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    bottom: 190px;
-} */
 
 .owl-carousel .owl-nav button.owl-prev ,.owl-carousel .owl-nav button.owl-next{
    position: absolute !important;
@@ -331,18 +355,268 @@ font-family: 'Lato', sans-serif; */
 
 .carousel-caption{
     right: unset !important;
-    left: 10% !important;
-    bottom: 6rem !important;
+    left: 13% !important;
+    bottom: 120px !important;
     text-align: left !important;
     max-width: 500px !important;
+    padding: 0 !important;
 }
 
 .carousel-caption h3{
     font-family: 'Nunito', sans-serif;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 .carousel-caption h1{
     font-family: 'Nunito', sans-serif;
     font-weight: 900;
  }
+
+/* -----Mobile---- */
+.container-header-mobile{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.contenido-mobile-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 15px;
+}
+
+.contenido-mobile-2{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.container-input{
+    display: flex;
+    align-items: end;
+    position: relative;
+    width: 40%;
+}
+
+.container-input input{
+    color: #e90e0e;
+    font-size: 13px;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+    border: none;
+    border-bottom: solid 2px #7A7A7A;
+    font-family: 'Nunito', sans-serif;
+    outline: none;
+    width: 100%;
+}
+
+
+.container-cuenta{
+    display: flex;
+    gap: 50px;
+}
+
+.cuenta{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.cuenta p{
+    color: #7A7A7A;
+    font-size: 13px;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.buy{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.buy .numero{
+    background: #F8475F;
+    border-radius: 50%;
+    width: 17px;
+    height: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buy .numero p{
+    margin: 0;
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+
+ /* ------ Medias Query ------ */
+ @media (max-width: 768px){
+    .container-header{
+       display: none;
+    }
+
+    .container-header-mobile {
+        display: flex;
+        padding: 0 30px;
+    }
+
+    .container-input{
+        width: 100%;
+    }
+
+    .carrousel-desktop{
+        display: none;
+    }
+
+    .carrousel-mobile{
+        display: block;
+    }
+
+    .container-slider .title{
+        font-size: 18px;
+    }
+
+    .container-slider .title::after{
+        width: 50px;
+    }
+
+    .container-slider{
+        padding: 40px;
+    }
+
+    .contenido-card .name{
+        font-size: 10px;
+    }
+
+    .css-ryrseu-MuiRating-root{
+        font-size: 13px !important;
+    }
+
+    .contenido-card .lista-precio{
+        font-size: 11px;
+    }
+
+    .contenido-card .precio{
+        font-size: 16px;
+    }
+
+    .caja{
+        width: 163px;
+        height: 300px;
+    }
+
+    .owl-theme .owl-dots .owl-dot span{
+        background: #BDBDBD !important;
+    }
+
+    .owl-theme .owl-dots .owl-dot.active span{
+        background: #F8475F !important;
+    }
+
+    .contenido-card button{
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .owl-theme .owl-nav.disabled + .owl-dots {
+        margin-top: 20px !important;
+    }
+
+    .caja:hover{
+        background-color: #fff;
+    }
+
+    .container-formulario .title-form{
+        font-size: 27px;
+        text-align: left;
+    }
+
+    .container-formulario .formulario{
+        flex-direction: column;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+        gap: 15px;
+    }
+
+    .container-formulario .formulario .input-text, .container-formulario .formulario .input-email{
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .container-formulario .formulario .input-submit{
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .container-formulario{
+        padding: 30px;
+    }
+
+    .container-footer{
+        flex-direction: column;
+        padding: 30px;
+        align-items: baseline;
+    }
+
+    .container-footer .textos-footer .title-footer{
+        font-size: 22px;
+    }
+
+    .container-footer .textos-footer .title-footer::after{
+        width: 43px;
+        margin: 15px 0 25px 0;
+    }
+
+    .container-footer .textos-footer p{
+        margin-bottom: 15px;
+    }
+
+    .container-footer .btn-footer{
+        margin: auto;
+        padding: 20px 0 40px 0;
+        width: 60%;
+    }
+
+    .container-footer .icons-footer{
+        margin: auto;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .carousel-caption h1{
+        font-size: 32px;
+    }
+
+    .carousel-caption h3{
+        font-size: 24px;
+    }
+
+    .carousel-caption{
+        left: 5% !important;
+        bottom: 83px !important;
+    }
+
+    .error p{
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 576px){
+    .carousel-caption{
+        bottom: 15px !important;
+    }
+    
+}

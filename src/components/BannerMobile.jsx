@@ -1,17 +1,17 @@
 import Carousel from 'react-bootstrap/Carousel';
-import banner1 from '../assets/banner1.jpg'
-import banner2 from '../assets/banner2.jpg'
-import banner3 from '../assets/banner3.jpg'
-import banner4 from '../assets/banner4.jpg'
+import bannerMobile1 from '../assets/bannerMobile1.jpg'
+import bannerMobile2 from '../assets/bannerMobile2.jpg'
+import bannerMobile3 from '../assets/bannerMobile3.jpg'
+import bannerMobile4 from '../assets/bannerMobile4.jpg'
 
 const Banner = () => {
   return (
-    <div className='carrousel-desktop'>
+    <div className='carrousel-mobile'>
         <Carousel fade>
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={banner1}
+          src={bannerMobile1}
           alt="First slide"
         />
         <Carousel.Caption>
@@ -23,7 +23,7 @@ const Banner = () => {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={banner2}
+          src={bannerMobile2}
           alt="Second slide"
         />
         <Carousel.Caption>
@@ -35,7 +35,7 @@ const Banner = () => {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={banner3}
+          src={bannerMobile3}
           alt="Third slide"
         />
         <Carousel.Caption>
@@ -47,7 +47,7 @@ const Banner = () => {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={banner4}
+          src={bannerMobile4}
           alt="Third slide"
         />
         <Carousel.Caption>

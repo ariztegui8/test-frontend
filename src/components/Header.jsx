@@ -1,15 +1,16 @@
 import logo1 from '../assets/logo1.jpg'
-import search from '../assets/search.svg'
-import user2 from '../assets/user2.svg'
-import buy from '../assets/buy.svg'
 import useProducts from '../hooks/useProducts'
+
+import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
+import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+import SearchIcon from '@mui/icons-material/Search';
+import MenuIcon from '@mui/icons-material/Menu';
 
 
 
 const Header = () => {
 
-    const {sumarCarrito} = useProducts();
-    console.log(sumarCarrito);
+    const {sumarCarrito, mostrarContador} = useProducts();
 
   return (
     <div className='container-header'>
@@ -22,19 +23,25 @@ const Header = () => {
                 type="text"
                 placeholder='¿Qué estás buscando?'
             />
-            <img src={search} alt="" />
+            <SearchIcon fontSize='large' sx={{ position: 'absolute', right: 0, bottom: 3 }}/>
         </div>
 
         <div className='container-cuenta'>
             <div className='cuenta'>
-                <img src={user2} alt="" />
+                <PersonOutlineOutlinedIcon fontSize='large' />
                 <p>Mi Cuenta</p>
             </div>
 
             <div className='buy'>
-                <img src={buy} alt="" />
-                <div className='numero'>
-                    <p>{sumarCarrito}</p>
+                <ShoppingCartOutlinedIcon  fontSize='large'/>
+                <div>
+                    
+                   
+                        <div className='numero'>
+                            <p>{sumarCarrito}</p>
+                        </div>
+                  
+                    
                 </div>
             </div>
         </div>

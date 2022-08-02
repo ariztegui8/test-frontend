@@ -13,6 +13,40 @@ const SliderProducts = () => {
 
     const {productos, contador} = useProducts();
 
+    const options = {
+        items:'4',
+        margin: 10,
+        dots: false,
+        nav: true,
+        loop: true,
+        responsive: {
+          0: {
+            items: 2,
+            dots: true,
+            nav: false,
+        },
+        414: {
+            items: 2,
+            dots: true,
+            nav: false,
+        },
+        576: {
+            items: 2,
+            dots: true,
+            nav: false,
+        },
+        768: {
+            items: 3,
+            dots: false,
+            nav: true,
+        },
+        992: {
+          items: 4,
+          dots: false,
+          nav: true,
+      },
+      },
+  };
 
   return (
     <div className='container-slider'>
@@ -21,10 +55,7 @@ const SliderProducts = () => {
      
         <OwlCarousel
           className='owl-theme'
-          items='4'
-          dots={false}
-          nav
-          loop
+          {...options}
         >
 
           {productos.map(producto =>(
@@ -45,7 +76,7 @@ const SliderProducts = () => {
                     </Box>
                   <p className="lista-precio">de $ {producto.listPrice}</p>
                   <p className="precio">por $ {producto.price}</p>
-                  <p className="cuota">o en {producto.installments.quantity} x de R $ </p>
+                  <p className="cuota">o en x de R $ </p>
                   <button
                     onClick={contador}
                   >comprar</button>

@@ -5,6 +5,7 @@ import vtex from '../assets/vtex.svg'
 
 const Footer = () => {
   return (
+    <>
     <div className='container-footer'>
         <div className='textos-footer'>
           <h3 className='title-footer'>Ubicación</h3>
@@ -35,6 +36,10 @@ const Footer = () => {
             </div>
         </div>
     </div>
+    <div className='barrita'>
+
+    </div>
+    </>
   )
 }
 
