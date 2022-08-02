@@ -25,11 +25,11 @@ const Header = () => {
                 <div className='buy'>
                     <ShoppingCartOutlinedIcon  fontSize='large'/>
                     <div>
-                        {mostrarContador ?
+                       
                         <div className='numero'>
                             <p>{sumarCarrito}</p>
                         </div>
-                        : null}
+                       
                     </div>
                 </div>
             </div>

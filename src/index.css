@@ -528,6 +528,7 @@ font-family: 'Lato', sans-serif; */
     .contenido-card button{
         width: 100%;
         font-size: 15px;
+        opacity: 1;
     }
 
     .owl-theme .owl-nav.disabled + .owl-dots {
