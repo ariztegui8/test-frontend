@@ -7,6 +7,14 @@ const Products = ({producto}) => {
     const {contador} = useProducts();
 
     const {imageUrl, installments, listPrice, price, productName, stars} = producto
+
+   const cuota = installments.map(cuote => (
+      cuote.value
+    ))
+
+    const cuotaPrecio = installments.map(precio => (
+      precio.quantity
+    ))
     
 
   return (
@@ -33,12 +41,23 @@ const Products = ({producto}) => {
                     >
                       <Rating name="read-only" value={stars} readOnly />
                     </Box>
-                  <p className="lista-precio">de $ {listPrice}</p>
+
+                  {listPrice == null ?
+                    <p className='precio-falso'>es de 2630</p>   :
+                    <p className="lista-precio">de $ {listPrice}</p>
+                  }
+
                   <p className="precio">por $ {price}</p>
-                  <p className="cuota">o en  x de R $ </p>
+
+                  {cuota == '' || cuotaPrecio == '' ?
+                    <p></p>   :
+                    <p className="cuota">o en {cuota} x de R $ {cuotaPrecio}</p>
+                  }
+
                   <button
                     onClick={contador}
                   >comprar</button>
+
                 </div>
             </div>
         </div>
