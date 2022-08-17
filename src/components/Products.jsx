@@ -43,7 +43,7 @@ const Products = ({producto}) => {
                     </Box>
 
                   {listPrice == null ?
-                    <p className='precio-falso'>es de 2630</p>   :
+                    <p className='precio-falso'>es de $ 2630</p>   :
                     <p className="lista-precio">de $ {listPrice}</p>
                   }
 
@@ -51,7 +51,7 @@ const Products = ({producto}) => {
 
                   {cuota == '' || cuotaPrecio == '' ?
                     <p></p>   :
-                    <p className="cuota">o en {cuota} x de R $ {cuotaPrecio}</p>
+                    <p className="cuota">o en $ {cuota} x de R $ {cuotaPrecio}</p>
                   }
 
                   <button
